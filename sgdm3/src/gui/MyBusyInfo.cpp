@@ -47,7 +47,12 @@ void MyBusyInfo::Increment(void)
 	{
 		wxASSERT_MSG( (!m_pBusyInfo), _T("Coding Error") );
 		wxASSERT_MSG( (!m_pDisabler), _T("Coding Error") );
-		m_pBusyInfo = new wxBusyInfo("Please wait...");
+		
+		gui_app * pApp = static_cast<gui_app *>(wxTheApp);
+		if (!pApp->getCmdLineArgs().bNoSplash)
+		{
+			m_pBusyInfo = new wxBusyInfo("Please wait...");
+		}
 		m_pDisabler = new wxWindowDisabler(true);
 	}
 	else
@@ -73,8 +78,11 @@ void MyBusyInfo::Decrement(void)
 
 		delete m_pDisabler;
 		m_pDisabler = NULL;
-		delete m_pBusyInfo;
-		m_pBusyInfo = NULL;
+		if (m_pBusyInfo)
+		{
+			delete m_pBusyInfo;
+			m_pBusyInfo = NULL;
+		}
 	}
 	else
 	{

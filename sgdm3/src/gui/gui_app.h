@@ -54,6 +54,8 @@ public:
 
 	wxString		formatArgvForSupportMessage(void);
 
+	const cl_args &	getCmdLineArgs(void) const { return m_cl_args; }
+
 private:
 	bool			_OnInit_cl_args(void);
 	void			_cleanup(void);
