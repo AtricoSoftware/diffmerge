@@ -32,6 +32,7 @@ public:
 	bool		bTitle[3];			// --title[123]
 	bool		bResult;			// --result
 	bool		bCaption;			// --caption
+	bool		bNoSplash;			// --nosplash
 
 	int			nrParams;			// how many pathnames they gave
 

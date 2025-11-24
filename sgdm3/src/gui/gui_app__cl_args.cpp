@@ -116,8 +116,8 @@ void gui_app::OnInitCmdLine(wxCmdLineParser & parser)
 	{ wxCMD_LINE_SWITCH, _("MERGE"),	NULL,			NULL,														wxCMD_LINE_VAL_NONE },
 	{ wxCMD_LINE_SWITCH, _("m"),		_("merge"),		_("Run 'Merge to Center Panel' after loading files."),		wxCMD_LINE_VAL_NONE },
 	{ wxCMD_LINE_SWITCH, _("M"),		_("MERGE"),		_("Run 'Merge to Center Panel' after loading files."),		wxCMD_LINE_VAL_NONE },
-	{ wxCMD_LINE_SWITCH, _("nosplash"),_("nosplash"),	_("No splash screen [DEPRECATED]."),						wxCMD_LINE_VAL_NONE },
-	{ wxCMD_LINE_SWITCH, _("NOSPLASH"),_("NOSPLASH"),	_("No splash screen [DEPRECATED]."),						wxCMD_LINE_VAL_NONE },
+	{ wxCMD_LINE_SWITCH, _("nosplash"),_("nosplash"),	_("No splash screen."),								wxCMD_LINE_VAL_NONE },
+	{ wxCMD_LINE_SWITCH, _("NOSPLASH"),_("NOSPLASH"),	_("No splash screen."),								wxCMD_LINE_VAL_NONE },
 	{ wxCMD_LINE_OPTION, _("result"),	NULL,			NULL,														wxCMD_LINE_VAL_STRING,	wxCMD_LINE_NEEDS_SEPARATOR },
 	{ wxCMD_LINE_OPTION, _("RESULT"),	NULL,			NULL,														wxCMD_LINE_VAL_STRING,	wxCMD_LINE_NEEDS_SEPARATOR },
 	{ wxCMD_LINE_OPTION, _("r"),		_("result"),	_("Alternate pathname for saving 3-way merge result."),		wxCMD_LINE_VAL_STRING,	wxCMD_LINE_NEEDS_SEPARATOR },
@@ -198,6 +198,9 @@ bool gui_app::OnCmdLineParsed(wxCmdLineParser & parser)
 							   || parser.Found(_T("R"),&m_cl_args.result)     ||  parser.Found(_T("RESULT"),&m_cl_args.result) );
 	m_cl_args.bCaption     = (    parser.Found(_T("c"),&m_cl_args.caption)    ||  parser.Found(_T("caption"),&m_cl_args.caption)
 							   || parser.Found(_T("C"),&m_cl_args.caption)    ||  parser.Found(_T("CAPTION"),&m_cl_args.caption) );
+
+	m_cl_args.bNoSplash    = (    parser.Found(_T("nosplash"))
+							   || parser.Found(_T("NOSPLASH")) );
 
 	m_cl_args.bDumpDiffs   = (    parser.Found(_T("d"),&m_cl_args.diffOutput) ||  parser.Found(_T("diff"),&m_cl_args.diffOutput)
 							   || parser.Found(_T("D"),&m_cl_args.diffOutput) ||  parser.Found(_T("DIFF"),&m_cl_args.diffOutput) );
@@ -543,10 +546,10 @@ wxString gui_app::_makeUsageString(void) const
 	strUsage += _("    /t1=STRING, /title1=STRING, --title1=STRING\n");
 	strUsage += _("    /t2=STRING, /title2=STRING, --title2=STRING\n");
 	strUsage += _("    /t3=STRING, /title3=STRING, --title3=STRING\n");
+	strUsage += _("    /nosplash, --nosplash\n");
 
 //	strUsage += _("    /ro1, --ro1\n");
 //	strUsage += _("    /ro3, --ro3\n");
-//	strUsage += _("    /nosplash, --nosplash\n");
 
 	strUsage += _("\n");
 	strUsage += _("Batch Options:\n");
