@@ -6,7 +6,7 @@
 
 //////////////////////////////////////////////////////////////////
 
-#include <GEN_BuildNumber.h>
+#include "GEN_BuildNumber.h"
 #include <branding.h>
 #include <Resources.h>
 

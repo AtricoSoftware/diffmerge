@@ -35,3 +35,13 @@
 GENERATED
 /builds
 
+# VS files
+.suo
+.vs
+v17
+
+# Generated dirs
+bin
+obj
+shex_obj
+DiffMergeShellExtension.aps

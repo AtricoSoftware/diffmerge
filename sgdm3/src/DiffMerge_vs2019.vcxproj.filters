@@ -117,9 +117,6 @@
     <ClCompile Include="gui\dlg_insert_mark.cpp">
       <Filter>Source Files\gui</Filter>
     </ClCompile>
-    <ClCompile Include="gui\dlg_license.cpp">
-      <Filter>Source Files\gui</Filter>
-    </ClCompile>
     <ClCompile Include="gui\dlg_open.cpp">
       <Filter>Source Files\gui</Filter>
     </ClCompile>
@@ -133,9 +130,6 @@
       <Filter>Source Files\gui</Filter>
     </ClCompile>
     <ClCompile Include="gui\gui_app.cpp">
-      <Filter>Source Files\gui</Filter>
-    </ClCompile>
-    <ClCompile Include="gui\gui_app__banner.cpp">
       <Filter>Source Files\gui</Filter>
     </ClCompile>
     <ClCompile Include="gui\gui_app__cl_args.cpp">
@@ -280,9 +274,6 @@
       <Filter>Source Files\util</Filter>
     </ClCompile>
     <ClCompile Include="util\util_conditional_nonblank_text_validator.cpp">
-      <Filter>Source Files\util</Filter>
-    </ClCompile>
-    <ClCompile Include="util\util_curl.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
     <ClCompile Include="util\util_dont_show_again_msgbox.cpp">
@@ -501,9 +492,6 @@
     <ClCompile Include="xt\xt_tool_table.cpp">
       <Filter>Source Files\xt</Filter>
     </ClCompile>
-    <ClCompile Include="key\key_license.cpp">
-      <Filter>Source Files\key</Filter>
-    </ClCompile>
     <ClCompile Include="key\sg_uuid.cpp">
       <Filter>Source Files\key</Filter>
     </ClCompile>
@@ -513,19 +501,7 @@
     <ClCompile Include="key\sghash__sha1.cpp">
       <Filter>Source Files\key</Filter>
     </ClCompile>
-    <ClCompile Include="gui\dlg_nag.cpp">
-      <Filter>Source Files\gui</Filter>
-    </ClCompile>
-    <ClCompile Include="gui\dlg_nag__license.cpp">
-      <Filter>Source Files\gui</Filter>
-    </ClCompile>
-    <ClCompile Include="gui\dlg_nag__new_revision.cpp">
-      <Filter>Source Files\gui</Filter>
-    </ClCompile>
     <ClCompile Include="gui\dlg_open_autocomplete.cpp">
-      <Filter>Source Files\gui</Filter>
-    </ClCompile>
-    <ClCompile Include="gui\dlg_paid.cpp">
       <Filter>Source Files\gui</Filter>
     </ClCompile>
     <ClCompile Include="gui\dlg_show_shortcut_details.cpp">
@@ -563,9 +539,6 @@
     <ClInclude Include="gui\dlg_insert_mark.h">
       <Filter>Header Files\gui</Filter>
     </ClInclude>
-    <ClInclude Include="gui\dlg_license.h">
-      <Filter>Header Files\gui</Filter>
-    </ClInclude>
     <ClInclude Include="gui\dlg_open.h">
       <Filter>Header Files\gui</Filter>
     </ClInclude>
@@ -582,9 +555,6 @@
       <Filter>Header Files\gui</Filter>
     </ClInclude>
     <ClInclude Include="gui\gui_app.h">
-      <Filter>Header Files\gui</Filter>
-    </ClInclude>
-    <ClInclude Include="gui\gui_app__banner.h">
       <Filter>Header Files\gui</Filter>
     </ClInclude>
     <ClInclude Include="gui\gui_dcl.h">
@@ -1094,16 +1064,7 @@
     <ClInclude Include="key\sghash__sha1.h">
       <Filter>Header Files\key</Filter>
     </ClInclude>
-    <ClInclude Include="util\util_curl.h">
-      <Filter>Header Files\util</Filter>
-    </ClInclude>
-    <ClInclude Include="gui\dlg_nag.h">
-      <Filter>Header Files\gui</Filter>
-    </ClInclude>
     <ClInclude Include="gui\dlg_open_autocomplete.h">
-      <Filter>Header Files\gui</Filter>
-    </ClInclude>
-    <ClInclude Include="gui\dlg_paid.h">
       <Filter>Header Files\gui</Filter>
     </ClInclude>
     <ClInclude Include="gui\dlg_show_shortcut_details.h">
@@ -1114,6 +1075,12 @@
     </ClInclude>
     <ClInclude Include="util\util_convert.h">
       <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="GEN_BuildNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GEN_ConfigFeatures.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
