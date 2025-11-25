@@ -22,7 +22,7 @@ cl_args::cl_args(void)
 	bTitle[2]    = false;
 	bResult      = false;
 	bCaption     = false;
-	bNoSplash    = false;
+	bSplash    = false;
 
 	nrParams     = 0;
 

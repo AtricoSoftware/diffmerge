@@ -46,7 +46,7 @@
 // check the ordering).
 
 #define REGISTRY_clargs				_T("CLARGS")
-#define REGISTRY_clargs_default		_T("/nosplash /shex")
+#define REGISTRY_clargs_default		_T("/shex")
 
 //////////////////////////////////////////////////////////////////
 
@@ -689,7 +689,7 @@ void CShExt::_getCommandString(UINT uFlags, LPCTSTR szInput, LPSTR pszName, UINT
 
 void CShExt::_loadRegistry(void)
 {
-	m_dwFeatureEnabled = 1;		// assume enabled unless register explictly says enabled=0
+	m_dwFeatureEnabled = 1;		// assume enabled unless register explicitly says enabled=0
 	m_nrMRU_Files = 0;			// assume no files in MRU until we read some
 	m_nrMRU_Folders = 0;		// assume no files in MRU until we read some
 
@@ -710,7 +710,7 @@ void CShExt::_loadRegistry(void)
 	if (lRet != ERROR_SUCCESS)
 		lstrcpynW(m_szCommandLineArgs,REGISTRY_clargs_default,MAX_PATH+1);
 
-	// TODO stat() the pathnames that we pull from the
+	// TODO stat() the path names that we pull from the
 	// TODO registry and verify that they still exist
 	// TODO on disk.  if not, either remove them from
 	// TODO the mru list in memory --or-- gray the corresponding

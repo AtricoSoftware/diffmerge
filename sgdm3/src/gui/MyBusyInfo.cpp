@@ -49,7 +49,7 @@ void MyBusyInfo::Increment(void)
 		wxASSERT_MSG( (!m_pDisabler), _T("Coding Error") );
 		
 		gui_app * pApp = static_cast<gui_app *>(wxTheApp);
-		if (!pApp->getCmdLineArgs().bNoSplash)
+		if (pApp->getCmdLineArgs().bSplash)
 		{
 			m_pBusyInfo = new wxBusyInfo("Please wait...");
 		}

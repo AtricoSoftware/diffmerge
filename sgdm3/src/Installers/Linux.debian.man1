@@ -28,7 +28,6 @@ Run "Merge to Center Panel" immediately after loading files
 in the first window opened.  This option is only valid when 3
 files are given.
 .RE
-.B \-nosplash, \-\-nosplash
 .RS
 Deprecated.  Unused.
 .RE

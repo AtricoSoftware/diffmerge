@@ -13,17 +13,17 @@
 // when using a .sln.
 //////////////////////////////////////////////////////////////////
 
-#define VER_MAJOR_VERSION			4
-#define VER_MAJOR_VERSION_STR		"4"
+#define VER_MAJOR_VERSION			5
+#define VER_MAJOR_VERSION_STR		"5"
 
-#define VER_MINOR_VERSION			2
-#define VER_MINOR_VERSION_STR		"2"
+#define VER_MINOR_VERSION			0
+#define VER_MINOR_VERSION_STR		"0"
 
 #define VER_MINOR_SUBVERSION		0
 #define VER_MINOR_SUBVERSION_STR	"0"
 
-#define VER_BUILD_NUMBER			1
-#define VER_BUILD_NUMBER_STR		"1"
+#define VER_BUILD_NUMBER			100
+#define VER_BUILD_NUMBER_STR		"101"
 
 #define VER_COPYRIGHT				_T("Copyright (C) 2024 SourceGear LLC. All Rights Reserved.")
 #define VER_COPYRIGHT_RC_STR		"Copyright (C) 2024 SourceGear LLC. All Rights Reserved."

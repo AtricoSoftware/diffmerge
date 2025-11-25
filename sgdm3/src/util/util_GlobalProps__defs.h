@@ -318,7 +318,7 @@ GPS(MISC_BANNER_CONTENTS_10,            _T("Misc/BC10"),                    _T("
 // match the values in the .DLL.
 
 GPL(SHEX_ENABLED,	_T("ShellExtension/Enabled"),	1)
-GPS(SHEX_CLARGS,	_T("ShellExtension/CLARGS"),	_T("/nosplash /shex"))
+GPS(SHEX_CLARGS,	_T("ShellExtension/CLARGS"),	_T("/splash /shex"))
 
 #endif
 
